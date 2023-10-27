@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Product Advertisement - Home</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+    <header>
+        <h1>Welcome to minion ads</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="features.html">Features</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </nav>
+    
+    <main>
+        <h2>Homepage</h2>
+        <p>Welcome to our website where we introduce our amazing product!</p>
+        <div class="image-grid">
+            <div class="image"><img src="c:\Users\User\Downloads\dslr-camera-feature.webp" alt="Image 1"></div>
+            <div class="image"><img src="c:\Users\User\Downloads\iphone.jpeg" alt="Image 2"></div>
+            <div class="image"><img src="c:\Users\User\Downloads\house.jpg" alt="Image 3"></div>
+            <div class="image"><img src="c:\Users\User\Downloads\roll royce.avif" alt="Image 4"></div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Product Advertisement</p>
+    </footer>
+    <button id="changeColorButton">Change Header Color</button>
+
+<script>
+    // JavaScript code for the homepage
+    var button = document.getElementById('changeColorButton');
+    var header = document.querySelector('header');
+
+    button.addEventListener('click', function() {
+        var colors = ['#FF5733', '#33FF57', '#5733FF', '#FF3385', '#33B2FF'];
+        var randomColor = colors[Math.floor(Math.random() * colors.length)];
+        header.style.backgroundColor = randomColor;
+    });
+</script>
+</body>
+</html>
+
+</body>
+</html>
